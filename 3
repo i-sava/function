@@ -1,0 +1,15 @@
+d = {'a':30, 'b':5, 'c':25, }
+[3,5,2]
+5
+def key_of_max_value(dt=dict()):
+  values = list(dt.values()) #[]
+  print(values)
+  if not values:
+    return 'Не передано значень'
+  M_value = max(values)#5
+  for k, v in dt.items():
+    if v == M_value:
+      return k,v
+
+r = key_of_max_value()
+print(r)
